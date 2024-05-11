@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body id="body">
+    
+      <!--  <ul id="idtag" class="xyz" data="valid">
+           <li class="listitem">first element</li>
+            <li class="listitem">Second element</li>
+            <li class="listitem">third element</li>
+        </ul>
+
+        <div id="firstdiv" class="alldivs">first div</div>
+        <div class="alldivs">second div</div>
+        <table>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+            </tr>
+            <tr>
+                <td>three</td>
+                <td>four</td>
+            </tr>
+        </table>
+    -->
+        <button id="clickbtn" > click me</button>
+
+
+        <script>
+            // root node
+           // console.log(document.documentElement);
+           // console.log(document.body);
+           // console.log(document.head);
+           // console.log(document.body.childNodes);
+           // console.log(document.body.children);
+          //  for(node of document.body.children)
+          //  {
+          //      console.log(node);
+          //  }
+          //  const childofbody=Array.from(document.body.children);
+           // console.log(childofbody);
+
+          /* const ultag=document.body.children[0];
+           const firstli=ultag.children[0];
+           const secondli=ultag.children[1];
+
+           console.log(ultag.nextElementSibling);
+           console.log(secondli.previousElementSibling.textContent);
+           */
+
+           //const tabletag=document.body.children[1];
+          // console.log(tabletag.tBodies[0].rows[0].cells[0].textContent);
+          // console.log(tabletag.rows);
+
+         // console.log(idtag.style.background="red");
+          //const ultag=document.getElementById("idtag");
+          //ultag.style.backgroundColor="red";
+
+          //const listItem=document.getElementsByClassName("listitem");
+         // console.log(listItem);
+
+         ////dsconst listItems=document.querySelectorAll('ul>li:nth-child(2)');
+         //console.log(listItems[0].textContent);
+
+
+        /* console.log(idtag.getAttribute('data'));
+
+         console.log(idtag.setAttribute('order-place','pending'));
+         console.log(idtag.getAttribute('order-place'));
+         console.log(idtag.removeAttribute('order-place'))
+         console.log(idtag.hasAttribute('order-place'));
+         console.log(idtag.attributes);
+         
+
+         
+        const newdiv=document.createElement('div');
+         const newtext=document.createTextNode('Namaste world');
+         newdiv.appendChild(newtext);
+
+        newdiv.innerHTML=
+        `<ul id="idtag" class="xyz" data="valid">
+            <li class="listitem">first element</li>
+            <li class="listitem">Second element</li>
+            <li class="listitem">third element</li>
+        </ul>`
+        body.append(newdiv);
+        console.log(newdiv);*/
+         
+
+
+         
+        // firstdiv.replaceWith(newdiv);
+        // newdiv.remove()
+
+
+
+        function callme()
+        {
+            alert('namaste worldd');
+        }
+      //  clickbtn.onclick=function(){
+      //      alert('namaste world');
+      //  }
+
+        clickbtn.addEventListener('click',callme);
+        clickbtn.addEventListener('click',function(){
+            alert("thanks");
+        })
+        clickbtn.removeEventListener('click',callme);
+
+      
+
+          
+
+
+
+        </script>
+    
+    
+</body>
+</html>
